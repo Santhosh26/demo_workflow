@@ -31,5 +31,5 @@ jobs:
           git clone https://github.com/Santhosh26/insecureforum.git
           pwd
           sleep 30s
-          mvn com.fortify.sca.plugins.maven:sca-maven-plugin:20.2.0:translate
+          cd insecureforum && mvn com.fortify.sca.plugins.maven:sca-maven-plugin:20.2.0:translate
           
