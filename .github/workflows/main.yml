@@ -29,5 +29,5 @@ jobs:
       - name: checkout Insecure forum source code
         run: |
           git clone https://github.com/Santhosh26/insecureforum.git
-          cd /home/fortify/actions-runner/_work/demo_workflow/demo_workflow/insecureforum &&  mvn com.fortify.sca.plugins.maven:sca-maven-plugin:20.2.0:translate &&  mvn com.fortify.sca.plugins.maven:sca-maven-plugin:20.2.0:scan
+          sourceanalyzer
           
