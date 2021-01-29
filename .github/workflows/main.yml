@@ -33,4 +33,5 @@ jobs:
           sleep 30s
           cd insecureforum && mvn com.fortify.sca.plugins.maven:sca-maven-plugin:20.2.0:translate
           mvn com.fortify.sca.plugins.maven:sca-maven-plugin:20.2.0:scan
+          fortifyclient -url http://localhost:8080/ssc/ -authtoken d4d0955e-4340-477e-8cde-8cd41a2e3e5f uploadFPR -file "C:\actions-runner\_work\insecureforum\insecureforum\target\fortify\insecureforum-0.0.1-SNAPSHOT.fpr" -applicationVersionID 10000
           
